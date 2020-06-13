@@ -11,9 +11,9 @@ bool Caballo::valido(int i, int j, Tablero* tab){
 	    ( (this->fila+2)==i && ( (this->columna-1)==j || (this->columna+1)==j) )  ||
 	    ( (this->columna+2)==j && ( (this->fila-1)==j || (this->fila+1)==j))){
 		
-		if(tab->Check(i,j)){
+		
 			return true;
-		}
+	
 	}else{
 		return false;
 	}
