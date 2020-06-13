@@ -1,6 +1,5 @@
 #include <iostream>
 #include "Tablero.h"
-#include "Casilla.h"
 #include "Pieza.h"
 #include "Chaturanga.h"
 using namespace std;

@@ -4,8 +4,8 @@
 CPP      = g++.exe
 CC       = gcc.exe
 WINDRES  = windres.exe
-OBJ      = main.o Chaturanga.o Pieza.o Tablero.o Casilla.o Char.o Raja.o Ratha.o
-LINKOBJ  = main.o Chaturanga.o Pieza.o Tablero.o Casilla.o Char.o Raja.o Ratha.o
+OBJ      = main.o Chaturanga.o Pieza.o Tablero.o Raja.o Ratha.o Caballo.o Elefante.o Ministro.o Infanteria.o
+LINKOBJ  = main.o Chaturanga.o Pieza.o Tablero.o Raja.o Ratha.o Caballo.o Elefante.o Ministro.o Infanteria.o
 LIBS     = -L"C:/Users/Dell/Documents/progra_3/Dev-Cpp/MinGW64/lib" -L"C:/Users/Dell/Documents/progra_3/Dev-Cpp/MinGW64/x86_64-w64-mingw32/lib" -static-libgcc
 INCS     = -I"C:/Users/Dell/Documents/progra_3/Dev-Cpp/MinGW64/include" -I"C:/Users/Dell/Documents/progra_3/Dev-Cpp/MinGW64/x86_64-w64-mingw32/include" -I"C:/Users/Dell/Documents/progra_3/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include"
 CXXINCS  = -I"C:/Users/Dell/Documents/progra_3/Dev-Cpp/MinGW64/include" -I"C:/Users/Dell/Documents/progra_3/Dev-Cpp/MinGW64/x86_64-w64-mingw32/include" -I"C:/Users/Dell/Documents/progra_3/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include" -I"C:/Users/Dell/Documents/progra_3/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++"
@@ -36,14 +36,20 @@ Pieza.o: Pieza.cpp
 Tablero.o: Tablero.cpp
 	$(CPP) -c Tablero.cpp -o Tablero.o $(CXXFLAGS)
 
-Casilla.o: Casilla.cpp
-	$(CPP) -c Casilla.cpp -o Casilla.o $(CXXFLAGS)
-
-Char.o: Char.cpp
-	$(CPP) -c Char.cpp -o Char.o $(CXXFLAGS)
-
 Raja.o: Raja.cpp
 	$(CPP) -c Raja.cpp -o Raja.o $(CXXFLAGS)
 
 Ratha.o: Ratha.cpp
 	$(CPP) -c Ratha.cpp -o Ratha.o $(CXXFLAGS)
+
+Caballo.o: Caballo.cpp
+	$(CPP) -c Caballo.cpp -o Caballo.o $(CXXFLAGS)
+
+Elefante.o: Elefante.cpp
+	$(CPP) -c Elefante.cpp -o Elefante.o $(CXXFLAGS)
+
+Ministro.o: Ministro.cpp
+	$(CPP) -c Ministro.cpp -o Ministro.o $(CXXFLAGS)
+
+Infanteria.o: Infanteria.cpp
+	$(CPP) -c Infanteria.cpp -o Infanteria.o $(CXXFLAGS)

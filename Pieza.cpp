@@ -1,4 +1,5 @@
 #include "Pieza.h"
+#include "Tablero.h"
 
 Pieza::Pieza(int fila, int colum, bool jug, char type){
 	this->fila = fila;
@@ -8,9 +9,15 @@ Pieza::Pieza(int fila, int colum, bool jug, char type){
 }
 bool Pieza::move(int fila, int colum, Tablero* tab){
 	if(valido(fila, colum, tab)){
+		/*
 		tab->marcarCasilla(fila, colum, type);
 		tab->marcarCasilla(this->fila, this->columna, '.');
+		*/
+		return true;
+	}else{
+		return false;
 	}
+	
 }
 bool Pieza::getJugador(){
 	return this->jugador;

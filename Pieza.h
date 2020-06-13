@@ -1,13 +1,13 @@
 #ifndef PIEZA_H
 #define PIEZA_H
-#include "Tablero.h"
+class Tablero;
 
 class Pieza
 {
 	public:
 		
 		Pieza(int, int, bool, char);//true = blancas, flase = negras
-		bool move(int, int);
+		bool move(int, int, Tablero*);
 		bool getJugador();
 		bool valAdentro(int, int);
 		virtual bool valido(int, int, Tablero*) =0;//fila, columna
